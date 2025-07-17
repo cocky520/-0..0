@@ -21,6 +21,24 @@ body {
   .age-verification-content {
     padding: 20px; /* Reduce modal padding on mobile */
   }
+
+  .intro-container h1 {
+    font-size: 1.8em; /* Adjust heading size for mobile */
+  }
+
+  .intro-container button {
+    font-size: 1.2em; /* Adjust button font size for mobile */
+    padding: 12px 25px;
+  }
+
+  .intro-slogan {
+    font-size: 1.2em; /* Adjust slogan font size for mobile */
+  }
+
+  .highlighted-slogan {
+    font-size: 1.4em; /* Adjust highlighted slogan font size for mobile */
+    padding: 8px;
+  }
 }
 
 .intro-container {

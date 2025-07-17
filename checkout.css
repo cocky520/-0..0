@@ -19,6 +19,50 @@ body {
   .payment-modal-content {
     padding: 15px; /* Reduce modal padding on mobile */
   }
+
+  .checkout-container h1 {
+    font-size: 1.8em;
+  }
+
+  .crypto-prices h2,
+  .order-summary h2,
+  .payment-options h2,
+  .payment-modal-content h2 {
+    font-size: 1.3em;
+  }
+
+  .checkout-container p,
+  .price-item,
+  .payment-item,
+  .payment-warning,
+  .input-group label,
+  .input-group input,
+  .wallet-info p,
+  .overall-privacy-msg {
+    font-size: 0.9em;
+  }
+
+  .payment-warning {
+    padding: 10px;
+  }
+
+  .payment-item button,
+  button {
+    padding: 8px 15px;
+    font-size: 0.9em;
+  }
+
+  .crypto-prices,
+  .order-summary,
+  .payment-options {
+    margin-top: 20px;
+    padding: 15px;
+  }
+
+  .input-group input[type="text"],
+  .input-group input[type="email"] {
+    width: calc(100% - 20px); /* Adjust for smaller padding */
+  }
 }
 
 .checkout-container {
