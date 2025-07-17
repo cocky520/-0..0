@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>歡迎來到我的原味衣物賣場</title>
+  <link rel="stylesheet" href="intro.css">
+</head>
+<body>
+  <div class="intro-container">
+    <h1>歡迎來到我的原味訂製賣場</h1>
+
+    <div class="intro-content">
+      <p>小編我呢，本身對收集原味衣物很有興趣。目前市面上充斥著太多太多的盜版和詐騙。</p>
+      <p>此賣場所售賣的衣物絕對都是本人所穿的。您可能從 Instagram (IG)、TikTok (抖音) 或者 X (Twitter) 上看到了我們主播的影片。</p>
+      <p>裡面的衣服都是影片當中穿過的。如果您有購買影片的話，都是愛愛時的套裝。</p>
+      <p>但是，為了保護我們的主播，所有交易都採用加密貨幣支付。</p>
+      <p>購買完成後，請一定確保你留的GMAIL是正確的，小編會主動聯繫。</p>
+      <p>希望你們買得開心，用得也開心！</p>
+      <p class="intro-slogan">每個人心中都有一個女神</p>
+      <p class="intro-slogan">我們想做的事 把不屬於你的女神 變成你的專屬母狗</p>
+      <p class="highlighted-slogan">不想廢話，本站只服務高端人群，不二價，有需要再下單。</p>
+
+
+      <!-- 自動滑動圖片展示列 -->
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <img src="p6.webp" alt="圖片1" class="carousel-image">
+          <img src="p7.webp" alt="圖片2" class="carousel-image">
+          <img src="p8.webp" alt="圖片3" class="carousel-image">
+          <img src="p9.webp" alt="圖片4" class="carousel-image">
+        </div>
+        <div class="carousel-dots">
+          <span class="dot active" data-slide="0"></span>
+          <span class="dot" data-slide="1"></span>
+          <span class="dot" data-slide="2"></span>
+          <span class="dot" data-slide="3"></span>
+        </div>
+      </div>
+    </div>
+
+    <button onclick="window.location.href='index.html'">歡迎進入我的賣場</button>
+  </div>
+  <script src="intro.js"></script>
+  <!-- 警告標語 -->
+  <div class="warning-message">
+    <span class="warning-icon">⚠️</span> 照片影片都是本人請勿外流尊重素人演出者的名譽
+  </div>
+</body>
+</html>
+
+<!-- 年齡驗證彈窗 -->
+<div id="ageVerificationModal" class="age-verification-modal">
+  <div class="age-verification-content">
+    <h2>年齡驗證</h2>
+    <p>您是否已滿 18 歲？</p>
+    <div class="age-verification-buttons">
+      <button id="ageYesBtn">是</button>
+      <button id="ageNoBtn">否</button>
+    </div>
+  </div>
+</div>

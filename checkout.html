@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>結帳頁面 - 加密貨幣支付</title>
+  <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+  <div class="checkout-container">
+    <h1>結帳</h1>
+    <p>請選擇您的支付方式。</p>
+
+    <div class="crypto-prices">
+      <h2>即時加密貨幣價格</h2>
+      <div class="price-item">
+        <span>USDT:</span> <span id="usdt-price">載入中...</span>
+      </div>
+      <div class="price-item">
+        <span>USDC:</span> <span id="usdc-price">載入中...</span>
+      </div>
+      <div class="price-item">
+        <span>BTC:</span> <span id="btc-price">載入中...</span>
+      </div>
+    </div>
+
+    <div class="order-summary">
+      <h2>訂單總計</h2>
+      <p>總金額 (台幣): NT$<span id="total-ntd">0</span></p>
+      <p>總金額 (美金): $<span id="total-usd">0</span></p>
+      <div class="payment-warning">
+        <span class="warning-icon">⚠️</span>
+       </strong> 請確保單次匯款金額大於或等於總金額，否則視為無效。
+      </div>
+    </div>
+
+    <div class="payment-options">
+      <h2>支付選項</h2>
+      <div class="payment-item">
+        <span>USDT 支付:</span> <span id="pay-usdt">載入中...</span>
+        <button class="pay-btn" data-crypto="usdt">去繳費</button>
+      </div>
+      <div class="payment-item">
+        <span>USDC 支付:</span> <span id="pay-usdc">載入中...</span>
+        <button class="pay-btn" data-crypto="usdc">去繳費</button>
+      </div>
+      <div class="payment-item">
+        <span>BTC 支付:</span> <span id="pay-btc">載入中...</span>
+        <button class="pay-btn" data-crypto="btc">去繳費</button>
+      </div>
+    </div>
+
+    <button onclick="window.history.back()">返回購物</button>
+  </div>
+
+  <script src="checkout.js"></script>
+</body>
+</html>
+
+<!-- 支付資訊彈窗 -->
+<div id="paymentModal" class="payment-modal">
+  <div class="payment-modal-content">
+    <h2>支付資訊</h2>
+    <p>請填寫以下資訊以完成支付：</p>
+
+    <div class="input-group">
+      <label for="name">姓名:</label>
+      <input type="text" id="name" placeholder="請輸入您的姓名">
+      
+    </div>
+
+    <div class="input-group">
+      <label for="phone">電話:</label>
+      <input type="text" id="phone" placeholder="請輸入您的電話">
+      
+    </div>
+
+    <div class="input-group">
+      <label for="address">地址:</label>
+      <input type="text" id="address" placeholder="請輸入您的地址">
+      
+    </div>
+
+    <div class="input-group">
+      <label for="postalCode">郵遞區號:</label>
+      <input type="text" id="postalCode" placeholder="請輸入您的郵遞區號">
+      
+    </div>
+
+    <div class="input-group">
+      <label for="gmail">Gmail:</label>
+      <input type="email" id="gmail" placeholder="請輸入您的Gmail">
+      
+    </div>
+
+    <div class="wallet-info">
+      <h3>請匯款至以下地址：</h3>
+      <p><strong><span id="selectedCryptoType"></span> 冷錢包地址:</strong></p>
+      <p id="coldWalletAddress">[這裡將顯示您提供的冷錢包地址]</p>
+      <p class="warning-msg">請先匯款完成後再按下確認完成</p>
+    </div>
+
+    <div class="modal-actions">
+      <button id="confirmPaymentBtn">確認完成</button>
+      <button id="cancelPaymentBtn">取消</button>
+    </div>
+    <p class="overall-privacy-msg">此訊息絕對保密請放心</p>
+  </div>
+</div>
