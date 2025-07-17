@@ -11,6 +11,18 @@ body {
   color: #333;
 }
 
+@media (max-width: 600px) {
+  body {
+    padding: 10px; /* Reduce body padding on mobile */
+  }
+  .intro-container {
+    padding: 20px; /* Reduce container padding on mobile */
+  }
+  .age-verification-content {
+    padding: 20px; /* Reduce modal padding on mobile */
+  }
+}
+
 .intro-container {
   background-color: #fff;
   padding: 40px;

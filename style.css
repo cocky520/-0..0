@@ -202,6 +202,7 @@ body {
   .product-page {
     flex-direction: column;
     align-items: center;
+    padding: 10px; /* Reduce padding on mobile */
   }
   .product-images {
     width: 100%;

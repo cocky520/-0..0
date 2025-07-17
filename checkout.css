@@ -9,6 +9,18 @@ body {
   min-height: 100vh;
 }
 
+@media (max-width: 600px) {
+  body {
+    padding: 10px; /* Reduce body padding on mobile */
+  }
+  .checkout-container {
+    padding: 15px; /* Reduce container padding on mobile */
+  }
+  .payment-modal-content {
+    padding: 15px; /* Reduce modal padding on mobile */
+  }
+}
+
 .checkout-container {
   background-color: #fff;
   padding: 30px;
