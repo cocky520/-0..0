@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  console.log('intro.js 腳本已載入並執行。');
   const ageVerificationModal = document.getElementById('ageVerificationModal');
   const ageYesBtn = document.getElementById('ageYesBtn');
   const ageNoBtn = document.getElementById('ageNoBtn');
